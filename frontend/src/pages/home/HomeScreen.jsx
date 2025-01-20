@@ -9,7 +9,6 @@ import Slider from "../../components/Slider";
 
 const HomeScreen = () => {
   const { trendingContent } = useGetTrendingContent();
-  console.log(trendingContent)
   const { contentType } = useContentStore();
   const [imgLoading, setImgLoading] = useState(true);
 
