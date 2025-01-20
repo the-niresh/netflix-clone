@@ -110,3 +110,13 @@ export async function logout(req, res) {
     res.status(500).json({ success: false, message: "Internal server error" });
   }
 }
+
+export async function authCheck(req, res) {
+  try {
+    // const user = await User.findById(req.user._id).select("-password");
+    res.status(200).json({ success: true, user:req.user });
+  } catch (error) {
+    console.log("Error in authCheck: ", error.message);
+    res.status(500).json({ success: false, message: "Internal server error" });
+  }
+}
