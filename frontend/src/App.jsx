@@ -1,6 +1,6 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import LoginPage from "./pages/LoginPage";
-import SignUpPage from "./pages/SignupPage";
+import SignUpPage from "./pages/SignUPage";
 import HomePage from "./pages/home/HomePage";
 import Footer from "./components/Footer";
 import { Toaster } from "react-hot-toast";
